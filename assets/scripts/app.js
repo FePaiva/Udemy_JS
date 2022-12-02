@@ -33,6 +33,10 @@ function calculateResult(calculationType) {
   const initialResult = currentResult;
   let mathOperator;
 
+  if (!enteredNumber) {
+    return;
+  }
+
   if (calculationType === 'ADD') {
     currentResult += enteredNumber;
     mathOperator = '+';
